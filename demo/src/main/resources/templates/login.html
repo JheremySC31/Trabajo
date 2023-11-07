@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="head">
+    <meta charset="UTF-8" />
+    <title>UTP Reservas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /*end reset*/
+      /****-----start-body----****/
+      body {
+        text-align: center;
+        background: url("https://i.pinimg.com/originals/89/6a/73/896a7316c592ed79c6be5338b1251656.jpg")
+          0px 0px no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
+      .padding-all {
+        padding: 100px;
+      }
+
+      .header {
+        text-align: center;
+        padding-bottom: 75px;
+      }
+      .header h1 img {
+        width: 7%;
+      }
+
+      p,
+      a {
+        font-family: "Cormorant SC", serif;
+      }
+      .header h1 {
+        font-size: 70px;
+        color: #fff;
+        font-family: "Cormorant SC", serif;
+        letter-spacing: 3px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 4px #000;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .header h2 {
+        font-size: 20px;
+        color: #fff;
+        font-family: "Cormorant SC", serif;
+        letter-spacing: 3px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 4px #000;
+        font-weight: 600;
+      }
+      .mensaje {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        margin: 5px;
+      }
+
+      .design-w3l {
+        width: 36%;
+        margin: 0 auto;
+      }
+
+      .mail-form-agile {
+        padding: 50px 40px;
+        text-align: center;
+        margin: 0px;
+        color: #000;
+        margin: 0 auto;
+      }
+
+      .padding {
+        margin: 20px 0 30px;
+      }
+
+      .mail-form-agile input[type="text"],
+      .mail-form-agile input[type="password"] {
+        padding: 13px 10px;
+        width: 92.5%;
+        font-size: 16px;
+        outline: none;
+        border: 0px;
+        border-bottom: 1px solid #fff;
+        border-radius: 0px;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 1.6px;
+        color: #fff;
+        border-radius: 100px;
+      }
+
+      .mail-form-agile input[type="submit"] {
+        font-size: 18px;
+        padding: 10px 20px;
+        letter-spacing: 1.2px;
+        border: none;
+        text-transform: capitalize;
+        outline: none;
+        background: #c20b0b;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 auto;
+        font-family: "Open Sans", sans-serif;
+        -webkit-transition-duration: 0.9s;
+        transition-duration: 0.9s;
+      }
+      .mail-form-agile input[type="submit"]:hover {
+        -webkit-transition-duration: 0.9s;
+        transition-duration: 0.9s;
+        background: #ff0000;
+      }
+
+      /*-- responsive media queries --*/
+
+      @media screen and (max-width: 1440px) {
+        .design-w3l {
+          width: 40%;
+        }
+        .header h1 img {
+          width: 8.5%;
+        }
+      }
+
+      @media screen and (max-width: 1366px) {
+      }
+
+      @media screen and (max-width: 1280px) {
+        .design-w3l {
+          width: 46%;
+        }
+        .mail-form-agile {
+          padding: 40px;
+        }
+      }
+
+      @media screen and (max-width: 1080px) {
+        .padding-all {
+          padding: 100px 50px;
+        }
+        .header h1 img {
+          width: 8%;
+        }
+        .header h1 {
+          font-size: 44px;
+        }
+        header h2 {
+          font-size: 22px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        .design-w3l {
+          width: 54%;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .padding-all {
+          padding: 100px 30px;
+        }
+        .design-w3l {
+          width: 60%;
+        }
+        .header h1 {
+          font-size: 40px;
+        }
+        .header {
+          padding-bottom: 50px;
+        }
+        .footer {
+          padding-top: 50px;
+        }
+      }
+
+      @media screen and (max-width: 667px) {
+        .design-w3l {
+          width: 75%;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .header h1 img {
+          width: 10%;
+        }
+        .header h1 {
+          font-size: 36px;
+        }
+        .mail-form-agile {
+          padding: 35px 30px;
+        }
+        .mail-form-agile input[type="text"],
+        .mail-form-agile input[type="password"] {
+          font-size: 14px;
+        }
+        .mail-form-agile input[type="submit"] {
+          font-size: 16px;
+        }
+        .footer p {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 568px) {
+        .padding-all {
+          padding: 100px 20px;
+        }
+
+        .header h1 {
+          font-size: 32px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .header h1 {
+          font-size: 28px;
+        }
+        .design-w3l {
+          width: 92%;
+        }
+        .mail-form-agile input[type="submit"] {
+          font-size: 14px;
+        }
+        .footer p {
+          font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width: 414px) {
+        .padding-all {
+          padding: 100px 10px;
+        }
+      }
+
+      @media screen and (max-width: 384px) {
+        .header {
+          padding-bottom: 30px;
+        }
+
+        .design-w3l {
+          width: 100%;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="padding-all">
+      <div class="header">
+        <h1>BarOz</h1>
+		<h2>Gestión de recursos</h2>
+      </div>
+
+      <div class="design-w3l">
+        <div class="mail-form-agile">
+          <div th:if="${param.error}">
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert">
+              Username o password inválidos
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+
+          <div th:if="${param.logout}">
+            <div
+              class="alert alert-primary alert-dismissible fade show"
+              role="alert">
+              Ha cerrado sesión exitosamente
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <form th:action="@{/login}" method="post">
+            <input
+              type="text"
+              name="username"
+              placeholder="Ingrese usuario"
+              required="" />
+            <input
+              type="password"
+              name="password"
+              class="padding"
+              placeholder="Contraseña"
+              required="" />
+            <input type="submit" name="btn" value="Iniciar" />
+            <input type="hidden" name="accion" value="loguin" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer th:fragment="footer" class="container">
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+/*end reset*/
+/****-----start-body----****/
+body {
+    text-align: center;
+    background: url("main.jpg") 0px 0px no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.padding-all {
+    padding: 100px;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.header h1 img {
+    width: 7%;
+}
+
+p,
+a {
+    font-family: 'Cormorant SC', serif;
+}
+
+.header h1 {
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px #000;
+    font-weight: 600;
+}
+
+.mensaje {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+
+
+}
+
+.design-w3l {
+    width: 36%;
+    margin: 0 auto;
+}
+
+.mail-form-agile {
+    padding: 50px 40px;
+    text-align: center;
+    margin: 0px;
+    color: #000;
+    margin: 0 auto;
+}
+
+.padding {
+    margin: 20px 0 30px;
+}
+
+.mail-form-agile input[type="text"],
+.mail-form-agile input[type="password"] {
+    padding: 13px 10px;
+    width: 92.5%;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.6px;
+    color: #fff;
+}
+
+.mail-form-agile input[type="submit"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    letter-spacing: 1.2px;
+    border: none;
+    text-transform: capitalize;
+    outline: none;
+    background: #c20b0b;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+}
+
+.mail-form-agile input[type="submit"]:hover {
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    background: #ff0000;
+}
+
+/*-- responsive media queries --*/
+
+
+@media screen and (max-width:1440px) {
+    .design-w3l {
+        width: 40%;
+    }
+
+    .header h1 img {
+        width: 8.5%;
+    }
+
+}
+
+@media screen and (max-width:1366px) {}
+
+@media screen and (max-width:1280px) {
+    .design-w3l {
+        width: 46%;
+    }
+
+    .mail-form-agile {
+        padding: 40px;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .padding-all {
+        padding: 100px 50px;
+    }
+
+    .header h1 img {
+        width: 8%;
+    }
+
+    .header h1 {
+        font-size: 44px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .design-w3l {
+        width: 54%;
+    }
+
+
+}
+
+
+@media screen and (max-width:800px) {
+    .padding-all {
+        padding: 100px 30px;
+    }
+
+    .design-w3l {
+        width: 60%;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header {
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:667px) {
+    .design-w3l {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .header h1 img {
+        width: 10%;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .mail-form-agile {
+        padding: 35px 30px;
+    }
+
+    .mail-form-agile input[type="text"],
+    .mail-form-agile input[type="password"] {
+        font-size: 14px;
+    }
+
+    .mail-form-agile input[type="submit"] {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width:568px) {
+    .padding-all {
+        padding: 100px 20px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .design-w3l {
+        width: 92%;
+    }
+
+    .mail-form-agile input[type="submit"] {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .padding-all {
+        padding: 100px 10px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:384px) {
+    .header {
+        padding-bottom: 30px;
+    }
+
+    .design-w3l {
+        width: 100%;
+    }
+
+
+
+}
